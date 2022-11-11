@@ -1,0 +1,42 @@
+.timeInput{
+    text-align: center;
+    color: white;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    user-select: none;  
+    font-size: 20px;
+}
+.hoursInput{
+    text-align: center;
+    padding: 0;
+    margin: 5px;
+    width: 70px;
+    height: 30px;
+    font-size: 20px;
+    border-radius: 5px;
+    
+}
+.minutsInput{
+    text-align: center;
+    padding: 0;
+    margin: 5px;
+    width: 70px;
+    height: 30px;
+    font-size: 20px;
+    border-radius: 5px;
+}
+.submitInput{
+    width: 70px;
+    height: 30px;
+    border-radius: 5px;
+}
+.submitInput:active {
+    color: white;
+    background-color: #47325c;
+  }
+.none{
+    display: none;
+}
+.block{
+    display: block;
+}
