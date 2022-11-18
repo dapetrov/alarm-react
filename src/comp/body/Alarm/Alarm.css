@@ -40,3 +40,17 @@
 .block{
     display: block;
 }
+#closetab{
+    text-align: center;
+    width: 70px;
+    height: 30px;
+    border-radius: 5px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.rock{
+    align-items: center;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
