@@ -1,7 +1,7 @@
 import React from "react";
 import './Timer.css';
+const oxxy = require("./Ox.mp3");
 export const CountDown = ({ hours = 0, minutes = 0, seconds = 0 }) => {
-    // const [paused, setPaused] = React.useState(false);
     const [over, setOver] = React.useState(false);
     const [[h, m, s], setTime] = React.useState([hours, minutes, seconds]);
   
@@ -19,13 +19,7 @@ export const CountDown = ({ hours = 0, minutes = 0, seconds = 0 }) => {
         setTime([h, m, s - 1]);
       }
     };
-  
-    // const reset = () => {
-    //   setTime([parseInt(hours), parseInt(minutes), parseInt(seconds)]);
-    //   setPaused(false);
-    //   setOver(false);
-    // };
-  
+
     React.useEffect(() => {
       const timerID = setInterval(() => tick(), 1000);
       return () => clearInterval(timerID);
@@ -36,11 +30,8 @@ export const CountDown = ({ hours = 0, minutes = 0, seconds = 0 }) => {
         <p>{`${h.toString().padStart(2, '0')}:${m
           .toString()
           .padStart(2, '0')}:${s.toString().padStart(2, '0')}`}</p>
-        <div>{over ? "Пора вставати" : ''}</div>
-        {/* <button onClick={() => setPaused(!paused)}>
-          {paused ? 'Resume' : 'Pause'}
-        </button>
-        <button onClick={() => reset()}>Restart</button> */}
+        <div>{over ? "Присядь недорэперок" : ''}</div>
+        <div>{over ?  <audio src={oxxy} type = "audio/mpeg" autoPlay='true'></audio> : ' ' }</div>
       </div>
     );
   };

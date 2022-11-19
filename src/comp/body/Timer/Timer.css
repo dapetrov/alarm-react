@@ -4,3 +4,7 @@
 .block{
     display: block;
 }
+#CountDowns{
+    font-size: 30px;
+    color: #47325c;
+}
